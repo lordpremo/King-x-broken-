@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/edit.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/edit", "dest": "api/edit.py" },
+    { "src": "/", "dest": "api/edit.py" }
+  ]
+}

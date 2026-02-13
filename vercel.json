@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/joke.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/joke", "dest": "api/joke.py" },
+    { "src": "/jokes", "dest": "api/joke.py" },
+    { "src": "/", "dest": "api/joke.py" }
+  ]
+}
